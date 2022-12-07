@@ -1,5 +1,5 @@
 import { ActionType } from './action';
- 
+
 function talksReducer(talks = [], action = {}) {
   switch (action.type) {
     case ActionType.RECEIVE_TALKS:
@@ -22,5 +22,5 @@ function talksReducer(talks = [], action = {}) {
       return talks;
   }
 }
- 
+
 export default talksReducer;
